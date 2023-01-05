@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p style="margin: auto;align-items: center;text-align: center;padding: 1%;font-size: 30px;color:whitesmoke;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Weather Checker</p>
+    <div class="content">
+        <div class="leftPanel">
+            <div class="weather_word">Mist</div>
+            <div class="city_name">Mumbai</div>
+            <div class="weather_temp">23&#176C</div>
+            <div class="inputCity">
+                <input type="text" id="inputBox" placeholder="Enter City Name">
+                <img src="search.png" onclick="requestData()">
+            </div>
+        </div>
+        <div class="rightPanel">
+            <div class="feelsLike">
+                <p><img src="./temp.svg" alt="" class="icon">Feels Like</p>
+                <p id="fLTemp">23&#176C</p>
+            </div>
+            <div class="weather_humidity">
+                <p><img src="./humid.svg" alt="" class="icon">Humidity</p>
+                <p id="humid">70%</p>
+            </div>
+            <div class="weather_pressure">
+                <p><img src="./press.svg" alt="" class="icon">Pressure</p>
+                <p id="pres">1atm</p>
+            </div>
+            <div class="weather_wind">
+                <p><img src="./air.svg" alt="" class="icon">Wind</p>
+                <p id="wind">20mph</p>
+            </div>
+        </div>
+    </div>
+    <footer><a
+            href="https://www.freepik.com/free-photo/beautiful-aerial-shot-forest-enveloped-creepy-mist-fog_7841830.htm#query=weather%20background&position=25&from_view=search&track=sph">Image
+            by wirestock</a> on Freepik
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
